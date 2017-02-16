@@ -1,0 +1,36 @@
+
+          ---------------------------------------------------
+          Cyg4Me -- Cygwin package for building J2ME Software
+          ---------------------------------------------------
+
+Version 1.1. Released 2005/02/01.
+
+SCCS ID: @(#)README	1.2 05/02/01 15:35:10
+    
+Cyg4Me is a supported version of (a subset of) Cygwin tools for
+building Sun J2ME software on the Win32 platform.
+
+INSTALL
+
+    [1] Unpack this ZIP file to a directory such as C:\cyg4me.
+
+    [2] Put C:\cyg4me\bin as the FIRST item in your PATH variable. 
+        For example, type this in your CMD.exe window:
+
+        set PATH=C:\cyg4me\bin;%PATH%
+
+    [3] Now you can use C:\cyg4me\bin to build your J2ME software. 
+        For example, to build CLDC-HI, type this in your CMD.exe
+        window:
+
+        cd j2me_cldc\build\win32_i386
+        gnumake
+
+COMPATIBILITY
+
+    Cyg4Me contains binaries from a specific snapshot of Cygwin. These
+    binaries, especially cyg4me\bin\cygwin1.dll, may not be compatible
+    with other versions of Cygwin that you install on the same PC. To
+    ensure that you remove all PATH elements that point to other
+    versions of Cygwin in the CMD.exe window where you're building
+    J2ME software.
